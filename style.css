@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+header{
+    margin: 0;
+    padding: 2em 5em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #127554 2px;
+}
+header .logo{
+    font: italic 700 1.5em 'Arial';
+}
+header .logo span{
+    color: #d83e10;
+}
+
+header nav a{
+    margin: 0;
+    text-decoration: none;
+    padding: 0 1em 0;
+    font-size: .9em;
+    color: #000;
+}
+.banner{
+    height: 40vh;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('bg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.banner h1{
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: center;
+}
+.banner p{
+    font-size: .8em;
+    width: 70%;
+    text-align: center;
+}
+.newsletter{
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    background: #d6f1dd;
+}
+.newsletter h2{
+    text-align: center;
+    margin: 0;
+}
+.newsletter form input{
+    outline: none;
+    padding: 8px 15px;
+}
+.newsletter form button{
+    outline: none;
+    border: 1px solid #7fd82c;
+    padding: 8px 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+.lang{
+    padding: 1em 0;
+    background: #9ce2ad;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.lang .bx{
+    width: 250px;
+    padding: 2em .5em;
+}
+.lang .bx i{
+    width: 100%;
+    font-size: 3em;
+}
+
+.lang .bx h3{
+    width: 100%;
+    font-size: 1em;
+}
+.lang .bx p{
+    width: 100%;
+    font-size: .7em;
+}
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling about page  */
+.about{
+    width: 80%;
+    margin: 3em auto;
+    display: flex;
+    justify-content: space-around;
+}
+.about .abt{
+    width: auto;
+    margin: auto;
+    padding: 0 1em;
+}
+.about .abt h2{
+    font-size: 1.2em;
+}
+.about .abt p{
+    padding: 0 1em 0 0;
+    font-size: .9em;
+    line-height: 2em;
+}
+.about .abt p:nth-child(odd){
+    padding: 1em;
+    background: #7fd82c;
+    border-radius: 5px;
+}
+.about .todo{
+    padding: 1em;
+    height: fit-content;
+    background: #7fd82c;
+    border-radius: 5px;
+}
+.about .todo h2{
+    font-size: 1em;
+}
+.about .todo p{
+    padding: 0 1em 0 0;
+    font-size: .9em;
+    line-height: 2em;
+}
+
+/* Styling service page */
+
+.service{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.service .serv{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.service .serv h2{
+   font-size: 1em;
+}
+.service .serv .box{
+   padding: 1em;
+   background: #d6f1dd;
+   margin: .1em auto;
+   border-radius: 10px;
+}
+.service .serv .box h1{ 
+   font-size: 1em;
+}
+.service .serv .box p{ 
+   font-size: .8em;
+   line-height: 2em;
+}
+.service .contact{
+    margin: 1em 0;
+    padding: 0 1em 1em;
+    display: flex;
+    flex-direction: column;
+    background: #d6f1dd;
+    border-radius: 5px;
+    height: fit-content;
+}
+.service .contact h1{
+    font-size: 1em;
+}
+.service .contact label{
+    font-size: .8em;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    header .logo{
+        margin-bottom: .8em;
+    }
+    header nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletter{
+        align-items: center;
+        flex-direction: column;
+    }
+    .newsletter form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .newsletter form button{
+      width: 100%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .todo{
+        margin: auto;
+        width: inherit;
+    }
+    .service{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service .contact{
+        width: inherit;
+        
+    }
+}
